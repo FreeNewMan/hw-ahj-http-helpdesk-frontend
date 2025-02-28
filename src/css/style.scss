@@ -1,0 +1,149 @@
+body {
+	margin: 0;
+	padding: 0;
+	padding-left: 150px;
+	padding-right: 150px;
+	font-size: 20px;
+}
+
+
+.container {
+	// background-color: lightblue;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-panel {
+	margin-top: 10px;
+	text-align: right;
+	// border: 1px solid black;
+}
+
+.tickets-list {
+    margin-top: 10px;
+	padding-top: 10px;
+	// border: 1px solid black;
+	// background-color: rgb(93, 172, 247);
+	min-height: 100px;
+	border-radius: 10px;
+}
+
+.button {
+	background-color: white; /* Green */
+	border: 1px solid black;
+	border-radius: 10px;
+	//color: white;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	&:hover {
+		background-color: #c5c5c5; /* Green */ 
+		cursor: pointer;
+	}
+  }
+
+
+ .items-item {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	gap: 20px;
+	padding: 15px;
+	border: 1px solid black;
+	
+}
+
+.item-status {
+	width: 30px;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 15px;
+	text-align: center;
+}
+
+
+.item-name {
+	width: 600px;
+	cursor: pointer;
+}
+
+
+.item-description {
+	width: 100%;
+	padding: 30px;
+}
+
+.edit-item {
+	border-radius: 15px;
+	border: 1px solid black;
+	text-align: center;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+
+}
+
+
+.delete-item {
+	border-radius: 15px;
+	border: 1px solid black;
+	text-align: center;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+
+.ticket-form {
+	width: 40%;
+	position: absolute;
+	top: 25vh;
+	left: 30vw;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 10px;
+	.form-caption {
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		h3 {
+			padding: 0;
+			margin: 0;
+		}
+	}
+	.form-group {
+	   label {
+		display: block;
+	   }
+	   input[type=text], textarea {
+		width: 98%;
+		font-size: 20px;
+	   }
+	   textarea {
+		height: 70px;
+	   }
+
+	}
+	.buttons-list {
+		margin-top: 20px;
+		text-align: right;
+		button{
+			font-size: 15px;
+			width: 100px;
+			height: 30px;
+
+		}
+	}
+}
+
+.form-block {
+	height: 100%;
+}
