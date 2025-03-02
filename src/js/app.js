@@ -73,6 +73,7 @@ const describeDeleteEvent = (itm) => {
 
 const describeStatusEvent = (itm) => {
   itm.addEventListener('click', (e) => {
+    //console.log(e);
     const ticketId = e.target.parentElement.getAttribute('ticket_id');
     toggleStatus(ticketId);
   });

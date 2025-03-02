@@ -13,7 +13,7 @@ export const postTicket = (itm) => fetch(`${baseUrl}?method=createTicket`, {
       id: null,
       name: itm.name,
       description: itm.description,
-      status: 0,
+      status: "0",
     },
   ),
   headers: {

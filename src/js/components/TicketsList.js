@@ -58,15 +58,18 @@ export default class TicketsList {
   }
 
   toggleDescription(prm) {
-    const itm = this.items.querySelector(`[ticket_id="${prm.id}"]`);
-    let itemDescription = itm.querySelector('.item-description');
-    if (itemDescription) {
-      itemDescription.remove();
-    } else {
-      itemDescription = document.createElement('div');
-      itemDescription.classList.add('item-description');
-      itemDescription.textContent = prm.description;
-      itm.appendChild(itemDescription);
+    if (prm) {
+      console.log(prm.id);
+      const itm = this.items.querySelector(`[ticket_id="${prm.id}"]`);
+      let itemDescription = itm.querySelector('.item-description');
+      if (itemDescription) {
+        itemDescription.remove();
+      } else {
+        itemDescription = document.createElement('div');
+        itemDescription.classList.add('item-description');
+        itemDescription.textContent = prm.description;
+        itm.appendChild(itemDescription);
+      }
     }
   }
 
